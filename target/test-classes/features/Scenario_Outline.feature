@@ -7,7 +7,8 @@ Feature: Open Google
     When the user searches for '<SEARCH_KEY>'
 
     Then the website should display '<RESULT>'
+    And the browser should close
 
     Examples:
-      | URL | SEARCH_KEY | RESULT |
-      |     | Corgi      | Corgi  |
+      | SEARCH_KEY | RESULT |
+      | Corgi      | Corgi  |

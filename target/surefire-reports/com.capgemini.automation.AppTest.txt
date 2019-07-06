@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.capgemini.automation.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.13 s <<< FAILURE! - in com.capgemini.automation.AppTest
+initializationError(com.capgemini.automation.AppTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: Feature not found: classpath:features/new_feature.feature
+

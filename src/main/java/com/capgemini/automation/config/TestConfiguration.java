@@ -2,6 +2,7 @@ package com.capgemini.automation.config;
 
 
 import com.capgemini.automation.screens.LandingScreen;
+import com.capgemini.automation.screens.ResultsScreen;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,5 +39,11 @@ public class TestConfiguration {
     @DependsOn("webDriver")
     public LandingScreen landingScreen() {
         return new LandingScreen(webDriver);
+    }
+
+    @Bean
+    @DependsOn("webDriver")
+    public ResultsScreen resultsScreen(){
+        return new ResultsScreen(webDriver);
     }
 }

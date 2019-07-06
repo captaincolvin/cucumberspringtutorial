@@ -14,7 +14,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         glue = {"com.capgemini.automation.stepdefs"},
-        features = {"classpath:features/"}
+        plugin = {"io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"},
+        features = {"classpath:features/Scenario.feature"}
 
 )
 public class AppTest {
