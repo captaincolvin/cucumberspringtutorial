@@ -7,4 +7,4 @@ Feature: Open Google and Search Corgi
     When the user searches for 'Corgi'
 
     Then the website should display 'Corgi'
-    And the browser should close
+#    And the browser should close
